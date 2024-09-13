@@ -1,0 +1,66 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #007bff;
+}
+
+/* Estilo para los botones grandes */
+.btn-xl {
+  font-size: 2rem; /* Tamaño del texto del botón */
+  padding: 20px 40px; /* Espaciado dentro del botón */
+  border-radius: 12px; /* Bordes redondeados */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botón primario (nuevo proyecto) */
+.btn-primary {
+  background-color: #6c757d; /* Gris oscuro */
+  border-color: #6c757d; /* Gris oscuro */
+  color: white; /* Color del texto */
+}
+
+/* Botón de contorno (home) */
+.btn-outline-primary {
+  border-color: #6c757d; /* Gris oscuro */
+  color: #6c757d; /* Gris oscuro */
+}
+
+/* Contenedor de botones y línea vertical en columnas */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  text-align: center;
+}
+
+/* Línea vertical entre botones */
+.vertical-line {
+  width: 2px;
+  height: 150px; /* Ajusta la altura según sea necesario */
+  background-color: #000; /* Color de la línea */
+  margin: 0 30px; /* Espacio a los lados de la línea */
+}
+
+/* Estilo para el contenido de los botones (ícono y texto) */
+.btn-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-content i {
+  margin-bottom: 10px; /* Espacio entre ícono y texto */
+}
+
+.btn-content span {
+  font-size: 1.5rem; /* Tamaño del texto */
+}
