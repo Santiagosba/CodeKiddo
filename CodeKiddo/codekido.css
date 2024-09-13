@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #fff;
+    padding: 50px 30px; /* Más separación en los lados superior e inferior */
+    width: 250px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacia los elementos dentro del sidebar */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .main-menu li {
+    margin-bottom: 30px; /* Más separación entre los elementos del menú */
+}
+
+.sidebar .main-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem; /* Aumenta el tamaño de la fuente */
+}
+
+.sidebar .main-menu li a:hover {
+    color: #007bff;
+}
+
+.sidebar .additional-menu {
+    margin-top: auto; /* Mueve la sección hacia abajo */
+    border-top: 1px solid #ddd; /* Línea separadora opcional */
+    padding-top: 20px; /* Espacio adicional arriba */
+}
+
+.sidebar .additional-menu li {
+    margin-bottom: 30px; /* Más separación entre los elementos del menú */
+}
+
+.sidebar .additional-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem; /* Aumenta el tamaño de la fuente */
+}
+
+.sidebar .additional-menu li a:hover {
+    color: #007bff;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 40px;
+    padding-left: 60px; /* Aumenta el espacio a la izquierda */
+    width: calc(100% - 250px); /* Ajusta el ancho teniendo en cuenta el ancho del sidebar */
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* Card Grid Styles */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    width: 100%; /* Ajusta el ancho de la cuadrícula */
+}
+
+/* Especial para "Online Technical Support" */
+.technical-support {
+    grid-column: span 1; /* Ocupa solo una columna en la segunda fila */
+    grid-row: 2; /* Colócalo en la segunda fila */
+}
+
+/* Alinear los primeros tres elementos a la derecha */
+.card-grid > .card:not(.technical-support) {
+    grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas más grandes */
+    }
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card img {
+    max-width: 250px; /* Aumenta el tamaño máximo de las imágenes */
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
